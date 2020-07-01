@@ -6,43 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Estilos en Css-->
     <style>
-      .borde{
-        border: 1px #000 solid; text-align: center; height: 50px;
+      .slider{
+        background: url("imagenes/pc.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        color: aliceblue;
       }
-      .color1{
-        background-color: cyan;
-      }
-      .color2{
-        background-color: rgb(62, 206, 18);
-      }
-      .color3{
-        background-color: rgb(238, 255, 0);
-      }
-      .color4{
-        background-color: rgb(255, 8, 0);
-      }
+    
     </style>
+      </head>
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+      <h1 class="display-4">Bootstrap4</h1>
+    </section>
+  <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="imagenes/bootstrap-seeklogo.com.svg" width="30" height="30" class="d-inline-block aling-top" alt="Logo Bootstrap">
+      Bootstrap
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto ml-auto text-center">
+            <a class="nav-item nav-link active" href="#">Inicio</button></a>
+            <a class="nav-item nav-link" href="#">Nosotros</a>
+            <a class="nav-item nav-link" href="#">Contactos</a>   
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Servicios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+        </div>
+        <div  class="d-flex flex-row justify-content-around ">
+          <a href="#"class="mr-4"><img src="imagenes/facebook-flat-vector-logo.png" width="30" height="30" class="d-inline-block aling-top" alt=""></a>
+          <a href="#"> <img src="imagenes/YouTube_icon_F7801.svg" width="30" height="30" class="d-inline-block aling-top" alt=""></a>
+        </div>
+      </div>
+    </nav>
+  <!--navbar Fin-->
 
-  </head>
+  <!--card-->
+    <section class="container mt-2 pt-5">
+      <div class="card-deck">
+        <div class="card">
+          <img src="imagenes/Jonathan.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imagenes/Joseph.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imagenes/Jotaro.png" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--card fin-->
+
+    <!--Jumbotron-->    
+      <div class="jumbotron mt-5 rounded-0">
+        <div class="container">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <hr class="my-4">
+          <div class="d-flex justify-content-md-between align-items-center">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+        </div>
+      </div>
+    <!--Jumbotron fin-->  
+      
+    <!--Formulario 1 --> 
+
+      <section class="container">
+        <h3 class="text-uppercase text-center">Formulario de contacto</h3>
+        <p class="lead text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum voluptate ducimus aperiam minus alias, fuga nobis et hic eveniet! Nobis voluptas asperiores nisi odio sapiente magnam explicabo aliquam. Ipsam, totam?</p>
+        
+      <div class="row">
+        <div class="col-6">
+          <form action="">
+            <div class="form-group row">
+              <label for="" class="col-2 col-form-label">Nombre:</label>
+              <input type="text" placeholder="Escribe tu nombre aqui" class="form-control col-10">
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-2 col-form-label">Email:</label>
+              <input type="email" placeholder="Escribe tu email aqui" class="form-control col-10">
+            </div>         
+            <div class="form-group">
+              <button class="btn btn-danger">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div> 
+      </section>
+
+    <!--Formulario 1 fin-->         
   <body>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 color4 borde">HEADER</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-3 color1 borde d-none d-md-block d-sm-inline">IZQUIERDA</div>
-        <div class="col-sm-6 col-md-6 color2 borde">CONTENIDO</div>
-        <div class="col-sm-12 col-md-3 color3 borde">DERECHA</div>
-
-      </div>
-      <div class="row">
-        <div class="col-sm-12 color4 borde">FOOTER</div>
-      </div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
